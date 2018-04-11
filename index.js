@@ -1,5 +1,6 @@
 var Word = require("./word.js");
 var inquirer = require("inquirer");
+var clc = require('cli-color');
 var wordList = ["pizza", "lasagna", "burrito", "sandwhich", "pasta", "spaghetti"];
 var chosenWord = wordList[Math.floor(Math.random() * wordList.length)];
 var wordSplit = chosenWord.split("");
@@ -30,23 +31,23 @@ function startGame() {
 			}
 		}
 		if (letterInWord) {
-			console.log("Correct!")
+			console.log(clc.green("Correct!"));
 		} else {
 			guessesLeft--;
-			console.log("Incorrect!")
+			console.log(clc.red("Incorrect!"));
 		}
 		dashArray = [];
 		firstWord.returnWord(letterArray, dashArray);
 		console.log(`${guessesLeft} guesses remaining`)
 		console.log("");
 		if (dashArray.toString() === wordSplit.toString()) {
-			console.log("Winner Winner Chicken Dinner! (PUBG?)");
+			console.log(clc.green("Winner Winner Chicken Dinner! ...(PUBG?)"));
 			guessesLeft = 0;
 		}
 		if (guessesLeft > 0) {
 			startGame();
 		} else {
-			console.log("You lose! Next word: ")
+			console.log(clc.red("You lose! Next word: "));
 			guessesLeft = 10;
 			dashArray = [];
 			letterArray = [];
