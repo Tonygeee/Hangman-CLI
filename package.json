@@ -1,0 +1,23 @@
+{
+  "name": "index",
+  "version": "1.0.0",
+  "description": "week 11 assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tonygeee/Hangman-CLI.git"
+  },
+  "keywords": [
+    "Homework",
+    "11"
+  ],
+  "author": "Tony Gonzalez <tgonzalez887@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tonygeee/Hangman-CLI/issues"
+  },
+  "homepage": "https://github.com/Tonygeee/Hangman-CLI#readme"
+}
