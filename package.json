@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Tonygeee/Hangman-CLI/issues"
   },
-  "homepage": "https://github.com/Tonygeee/Hangman-CLI#readme"
+  "homepage": "https://github.com/Tonygeee/Hangman-CLI#readme",
+  "dependencies": {
+    "cli-color": "^1.2.0"
+  }
 }
